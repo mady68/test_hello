@@ -6,3 +6,8 @@ git status # status
 git add file_name 
 git checkout # get last version of file in repository
  git reset 17_1_git.comm # reset file from stage , if you decide not to commit the change into repo
+-----git logs----
+git log --oneline # look over log
+git log --pretty=oneline # full id in oneline 
+git log --pretty=oneline --max-count=2 
+git log --pretty=oneline --until='5 minutes ago' 
