@@ -11,3 +11,5 @@ git log --oneline # look over log
 git log --pretty=oneline # full id in oneline 
 git log --pretty=oneline --max-count=2 
 git log --pretty=oneline --until='5 minutes ago' 
+git log --pretty=oneline --author=ildar 
+git log --pretty=oneline --all 
