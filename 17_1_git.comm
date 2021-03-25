@@ -22,4 +22,12 @@ git tag # list tags
 git tag v1-beta # tag previous branch
 git checkout v1 # switch again to v1
 ghi master --all # list all branches with master and tags
-git reset HEAD hello.html # to cansel staged changes 
+git reset HEAD hello.html # to cansel staged changes in buffer zone(stage-cache)
+git revert HEAD # revert HEAD (last, master branch, or id branche in hist)
+
+ ---- Removing a commit from a branch ---
+git reset --hard 18bd54d # reset master branch to commit 18bd...
+git reset --hard 18bd54d # reset master branch to commit 18bd...with restore work dir 
+git reset --soft 18bd54d # reset master branch to commit 18bd...work dir - not changed; stage - show modified fixation; 
+git reset --mixed 18bd54d # reset master branch to commit 18bd...work dir - not changed; stage - cleaned; 
+git tag -d oops # delete tag (commit from --all list);
