@@ -1,5 +1,3 @@
-git status # status 
- git add hello.html # adding file to stage(cache)
              
 
 ---after the changes---
@@ -15,3 +13,6 @@ git log --pretty=oneline --author=ildar
 git log --pretty=oneline --all 
 git log --all --pretty=format:"%h %cd %s (%an)" --since='7 days ago'
 git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short 
+
+git checkout 4fee2df # switch to branch 4fee...
+git checkout master # return back to master branch
