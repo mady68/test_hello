@@ -16,3 +16,9 @@ git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short
 
 git checkout 4fee2df # switch to branch 4fee...
 git checkout master # return back to master branch
+git tag v1 # add tag to branche 
+git checkout v1^ # switch to parent branche for v1
+git tag # list tags 
+git tag v1-beta # tag previous branch
+git checkout v1 # switch again to v1
+ghi master --all # list all branches with master and tags
