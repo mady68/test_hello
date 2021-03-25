@@ -31,3 +31,14 @@ git reset --hard 18bd54d # reset master branch to commit 18bd...with restore wor
 git reset --soft 18bd54d # reset master branch to commit 18bd...work dir - not changed; stage - show modified fixation; 
 git reset --mixed 18bd54d # reset master branch to commit 18bd...work dir - not changed; stage - cleaned; 
 git tag -d oops # delete tag (commit from --all list);
+git commit --amend -m "Add an author/email comment" # amending (changing the current commit ) 
+
+---- Moving files ----
+ git mv hello.html lib # mov file to lib dir
+# ^ = mkdir lib
+     mv hello.html lib
+     git add lib/hello.html
+     git rm hello.html
+########--------------
+
+
