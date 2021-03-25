@@ -22,3 +22,4 @@ git tag # list tags
 git tag v1-beta # tag previous branch
 git checkout v1 # switch again to v1
 ghi master --all # list all branches with master and tags
+git reset HEAD hello.html # to cansel staged changes 
