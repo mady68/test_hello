@@ -42,3 +42,23 @@ git commit --amend -m "Add an author/email comment" # amending (changing the cur
 ########--------------
 
 
+
+ -----inside Git-----
+ls -C .git # list dir .git 
+ls -C .git/objects # obj database 
+ls -C .git/objects/00 # list encrypted and compressed stored objects in git.
+cat .git/config # config file for each project
+ls .git/refs  # refereances 
+ls .git/refs/heads/ 
+ls .git/refs/tags 
+cat .git/refs/tags/v1 
+ls .git/HEAD
+
+----direct work with git obj----
+ghi --max-count=1 # list last commit
+git cat-file -t f42d6c1 # get info 
+git cat-file -p f42d6c1 # get info more 
+you may create aliases: git type | git dump 
+ git cat-file -p 871a65 # get ingo about tree 
+git cat-file -p 958703 # display info about lib dir 
+git cat-file -p 39b7011 # cat info from hello.html file 
