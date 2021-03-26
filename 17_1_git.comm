@@ -62,3 +62,7 @@ you may create aliases: git type | git dump
  git cat-file -p 871a65 # get ingo about tree 
 git cat-file -p 958703 # display info about lib dir 
 git cat-file -p 39b7011 # cat info from hello.html file 
+
+-----Create new branch, for isolate changes from master branch
+git checkout  -b 'style' # create brch named style
+git checkout master|style # switch btw branches
